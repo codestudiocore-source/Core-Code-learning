@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - CoreCodeStudio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container nav-content">
+            <h1 class="logo"><a href="index.html">CoreCodeStudio</a></h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="course.html">Courses</a></li>  
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="admin.html" class="active">Admin</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="lesson.html">Lesson</a></li>
+                    <li><a href="payement.html">Payment</a></li>
+                    <li><a href="course-details.html">Course Detail</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-secondary">Login</a>
+                <a href="signup.html" class="btn btn-primary">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="admin-wrapper">
+        
+        <aside class="admin-sidebar">
+            <h1 class="admin-logo"><a href="admin.html">Core Admin</a></h1>
+            <nav class="admin-nav">
+                <ul>
+                    <li><a href="#" class="active">Dashboard</a></li>
+                    <li><a href="#">Manage Courses</a></li>
+                    <li><a href="#">User Management</a></li>
+                    <li><a href="#">Orders & Sales</a></li>
+                    <li><a href="#">Blog Editor</a></li>
+                    <li><a href="#">System Settings</a></li>
+                </ul>
+            </nav>
+            <div class="admin-footer-links">
+                <a href="index.html">View Live Site</a>
+                <a href="login.html" class="logout-btn">Log Out</a>
+            </div>
+        </aside>
+
+        <main class="admin-content-area">
+            
+            <header class="admin-header">
+                <h2>Dashboard Overview</h2>
+                <div class="admin-user-info">
+                    <span class="user-name">Welcome, Admin User</span>
+                    <div class="profile-placeholder">A</div>
+                </div>
+            </header>
+
+            <section class="stats-grid">
+                
+                <div class="stat-card">
+                    <span class="stat-icon">📈</span>
+                    <p class="stat-label">Total Sales (30 Days)</p>
+                    <p class="stat-value">$18,500</p>
+                    <p class="stat-trend trend-up">+12% vs last month</p>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-icon">👥</span>
+                    <p class="stat-label">New Users</p>
+                    <p class="stat-value">520</p>
+                    <p class="stat-trend trend-up">+5% vs last month</p>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-icon">🎓</span>
+                    <p class="stat-label">Active Courses</p>
+                    <p class="stat-value">45</p>
+                    <p class="stat-trend trend-neutral">Stable</p>
+                </div>
+                
+                <div class="stat-card">
+                    <span class="stat-icon">🔥</span>
+                    <p class="stat-label">Avg. Completion Rate</p>
+                    <p class="stat-value">42%</p>
+                    <p class="stat-trend trend-down">-3% vs last month</p>
+                </div>
+            </section>
+
+            <section class="data-panels-grid">
+                
+                <div class="panel recent-activity">
+                    <h3>Recent User Activity</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>User</th>
+                                <th>Activity</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>J. Smith</td><td>Enrolled in Java Masterclass</td><td>5 min ago</td></tr>
+                            <tr><td>L. Chen</td><td>Completed Python Module 1</td><td>1 hour ago</td></tr>
+                            <tr><td>M. Davis</td><td>Refund requested for C++</td><td>4 hours ago</td></tr>
+                            <tr><td>R. Khan</td><td>Logged in</td><td>1 day ago</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="panel top-courses">
+                    <h3>Top Performing Courses</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Course</th>
+                                <th>Sales</th>
+                                <th>Rating</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Advanced Python</td><td>$4,500</td><td>4.8</td></tr>
+                            <tr><td>JavaScript ES6</td><td>$3,100</td><td>4.9</td></tr>
+                            <tr><td>Complete Java</td><td>$2,800</td><td>4.6</td></tr>
+                            <tr><td>C++ Fundamentals</td><td>$1,500</td><td>4.5</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+       
+    
+
+    <script src="javascript.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - CoreCodeStudio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container nav-content">
+            <h1 class="logo"><a href="index.html">CoreCodeStudio</a></h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="course.html">Courses</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="lesson.html">Lesson</a></li>
+                    <li><a href="payement.html" class="active">Payment</a></li>
+                    <li><a href="course-details.html">Course Detail</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons"
+                <a href="login.html" class="btn btn-secondary">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="payment-main">
+        <div class="container payment-grid">
+
+            <section class="payment-form-area">
+                <h2>Secure Checkout</h2>
+                <div class="checkout-steps">
+                    <span>1. Information</span> &gt; <span>2. **Payment**</span> &gt; <span>3. Review</span>
+                </div>
+                
+                <form action="dashboard.html" method="GET" class="payment-form">
+
+                    <fieldset class="payment-method">
+                        <legend>Payment Method</legend>
+                        <label class="radio-card">
+                            <input type="radio" name="payment_method" value="credit_card" checked>
+                            Credit/Debit Card 
+
+[Image of credit card icons]
+
+                        </label>
+                        <label class="radio-card">
+                            <input type="radio" name="payment_method" value="paypal">
+                            PayPal
+                        </label>
+                        <label class="radio-card">
+                            <input type="radio" name="payment_method" value="stripe">
+                            Stripe (Mock Integration)
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="card-details">
+                        <div class="form-group">
+                            <label for="card-number">Card Number</label>
+                            <input type="text" id="card-number" required placeholder="XXXX XXXX XXXX XXXX" maxlength="16">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="card-name">Name on Card</label>
+                            <input type="text" id="card-name" required placeholder="John Doe">
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group half-width">
+                                <label for="expiry">Expiry Date</label>
+                                <input type="text" id="expiry" required placeholder="MM/YY" maxlength="5">
+                            </div>
+                            <div class="form-group half-width">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" required placeholder="XXX" maxlength="4">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="billing-address">
+                        <legend>Billing Information</legend>
+                        <div class="form-group">
+                            <label for="country">Country</label>
+                            <select id="country" required>
+                                <option value="" disabled selected>Select Country</option>
+                                <option value="us">United States</option>
+                                <option value="ca">Canada</option>
+                                <option value="pk">Pakistan</option>
+                                </select>
+                        </div>
+                    </fieldset>
+
+                    <button type="submit" class="btn btn-primary btn-submit-payment">
+                        Complete Payment ($129.99)
+                    </button>
+                </form>
+
+            </section>
+
+            <aside class="order-summary">
+                <h3>Order Summary</h3>
+                <div class="summary-details">
+                    <div class="summary-item">
+                        <span>Course:</span>
+                        <span class="item-name">Advanced Python for Web Developers</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Instructor:</span>
+                        <span>Alex Thompson</span>
+                    </div>
+                </div>
+
+                <div class="price-breakdown">
+                    <div class="price-item">
+                        <span>Original Price:</span>
+                        <span>$199.99</span>
+                    </div>
+                    <div class="price-item discount">
+                        <span>Discount (Sale):</span>
+                        <span>- $70.00</span>
+                    </div>
+                    <div class="price-item total">
+                        <span>Total Due:</span>
+                        <span class="final-price">$129.99</span>
+                    </div>
+                </div>
+
+                <div class="security-note">
+                    🔒 All transactions are secured and encrypted.
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-bottom">
+            <p>&copy; 2025 CoreCodeStudio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    
+    
+    <script src="javascript.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - CoreCodeStudio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container nav-content">
+            <h1 class="logo"><a href="index.html">CoreCodeStudio</a></h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="course.html">Courses</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-secondary">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="auth-main">
+        <div class="login-container">
+            <h2 class="auth-title">Join CoreCodeStudio</h2>
+            <p class="auth-subtitle">Create your account and unlock hundreds of coding courses.</p>
+            
+            <form action="#" method="POST" class="auth-form">
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="name@example.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required placeholder="Must be at least 8 characters">
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required placeholder="Re-enter your password">
+                </div>
+
+                <div class="form-options terms-checkbox-group">
+                    <label class="checkbox-container">
+                        <input type="checkbox" required name="terms"> I agree to the <a href="#" class="forgot-link">Terms & Conditions</a>
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-submit">Sign Up</button>
+            </form>
+
+            <div class="switch-auth">
+                <p>Already have an account? <a href="login.html">Log In Here</a></p>
+            </div>
+        </div>
+        <div class="container nav-content">
+            <div class="auth-buttons">
+                <button class="menu-toggle" aria-label="Toggle navigation menu">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-bottom">
+            <p>&copy; 2025 CoreCodeStudio. All rights reserved. | <a href="contact.html">Contact Support</a></p>
+        </div>
+    </footer>
+    <script src="javascript.js" defer></script>
+</body>
+</html>

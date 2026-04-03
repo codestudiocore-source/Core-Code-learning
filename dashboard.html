@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dashboard - CoreCodeStudio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container nav-content">
+            <h1 class="logo"><a href="index.html">CoreCodeStudio</a></h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="course.html">Courses</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="lesson.html">Lesson</a></li>
+                    <li><a href="payement.html">Payment</a></li>
+                    <li><a href="course-details.html">Course Detail</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="dashboard.html" class="btn btn-primary active">My Dashboard</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="dashboard-layout">
+        
+        <aside class="dashboard-sidebar">
+            <div class="user-profile-summary">
+                <div class="profile-pic-placeholder">JD</div>
+                <h4>John Doe</h4>
+                <p>Member since 2024</p>
+            </div>
+
+            <nav class="dashboard-nav">
+                <ul>
+                    <li><a href="#" class="active">My Courses</a></li>
+                    <li><a href="#">Progress Tracker</a></li>
+                    <li><a href="#">Update Profile</a></li>
+                    <li><a href="#">Payment History</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li class="logout-link"><a href="login.html">Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="dashboard-content">
+            
+            <section class="welcome-section">
+                <h2>Welcome back, John!</h2>
+                <p>You have **3 active courses**. Let's continue your progress.</p>
+                <div class="quick-links">
+                    <a href="#" class="quick-link">Continue Python</a>
+                    <a href="#" class="quick-link">View Certifications</a>
+                    <a href="#" class="quick-link">Explore New Courses</a>
+                </div>
+            </section>
+
+            <section class="dashboard-stats-grid">
+                <div class="stat-card">
+                    <h3>Active Courses</h3>
+                    <p class="stat-value">3</p>
+                    <small>Courses currently in progress</small>
+                </div>
+                <div class="stat-card">
+                    <h3>Completion</h3>
+                    <p class="stat-value">42%</p>
+                    <small>Average completion across courses</small>
+                </div>
+                <div class="stat-card">
+                    <h3>Hours Learned</h3>
+                    <p class="stat-value">86</p>
+                    <small>Total hours this month</small>
+                </div>
+                <div class="stat-card">
+                    <h3>Active Workshops</h3>
+                    <p class="stat-value">2</p>
+                    <small>Upcoming instructor-led workshops</small>
+                </div>
+            </section>
+
+            <section class="progress-list">
+                <h3>Your Active Courses</h3>
+                
+                <div class="course-progress-card">
+                    <div class="course-title-area">
+                        <h4>Advanced Python for Web Developers</h4>
+                        <span class="status-badge status-in-progress">In Progress</span>
+                    </div>
+                    <p class="course-progress-meta">Module 2: REST API Development | 5/8 Lectures complete</p>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar progress-35"></div>
+                    </div>
+                    <div class="progress-footer">
+                        <span class="progress-percent">35% Complete</span>
+                        <a href="course-details.html?id=python-web" class="btn btn-primary btn-small">Continue Course &raquo;</a>
+                    </div>
+                </div>
+
+                <div class="course-progress-card">
+                    <div class="course-title-area">
+                        <h4>C Programming Essentials</h4>
+                        <span class="status-badge status-complete">Completed!</span>
+                    </div>
+                    <p class="course-progress-meta">You finished this course on Oct 15, 2025.</p>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar progress-complete progress-100"></div>
+                    </div>
+                    <div class="progress-footer">
+                        <span class="progress-percent">100% Complete</span>
+                        <a href="#" class="btn btn-secondary btn-small">Download Certificate</a>
+                    </div>
+                </div>
+                
+                <div class="course-progress-card">
+                    <div class="course-title-area">
+                        <h4>JavaScript Essentials: Modern ES6+</h4>
+                        <span class="status-badge status-in-progress">In Progress</span>
+                    </div>
+                    <p class="course-progress-meta">Module 1: Introduction | You need to start!</p>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar progress-5"></div>
+                    </div>
+                    <div class="progress-footer">
+                        <span class="progress-percent">5% Complete</span>
+                        <a href="course-details.html?id=js-es6" class="btn btn-primary btn-small">Start Now &raquo;</a>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="activity-table-section">
+                <h3>Recent User Activity</h3>
+                <table class="activity-table">
+                    <thead>
+                        <tr>
+                            <th>User</th>
+                            <th>Activity</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>J. Smith</td><td>Enrolled in Java Masterclass</td><td>5 min ago</td></tr>
+                        <tr><td>L. Chen</td><td>Completed Python Module 1</td><td>1 hour ago</td></tr>
+                        <tr><td>M. Davis</td><td>Refund requested for C++</td><td>4 hours ago</td></tr>
+                        <tr><td>R. Khan</td><td>Logged in</td><td>1 day ago</td></tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </main>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-bottom">
+            <p>&copy; 2025 CoreCodeStudio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    
+    
+    <script src="javascript.js" defer></script>
+</body>
+</html>

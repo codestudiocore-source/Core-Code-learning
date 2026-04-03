@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 1.1: Setting up Django - Advanced Python for Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container nav-content">
+            <h1 class="logo"><a href="index.html">CoreCodeStudio</a></h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="course.html">Courses</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="lesson.html" class="active">Lesson</a></li>
+                    <li><a href="payement.html">Payment</a></li>
+                    <li><a href="course-details.html">Course Detail</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-secondary">Login</a>
+                <a href="signup.html" class="btn btn-primary">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="lesson-view-container">
+        
+        <aside class="lesson-sidebar">
+            <header class="course-header">
+                <h3><a href="dashboard.html">Advanced Python for Web</a></h3>
+                <p>Instructor: Alex Thompson</p>
+            </header>
+            
+            <nav class="curriculum-nav">
+                <h4>Module 1: Django Fundamentals</h4>
+                <ul>
+                    <li class="lesson-item completed">
+                        <span class="lesson-status">✅</span>
+                        <a href="#">1.1 Introduction to MVT</a>
+                    </li>
+                    <li class="lesson-item active">
+                        <span class="lesson-status">▶️</span>
+                        <a href="#">1.2 Setting up your first Django Project</a>
+                    </li>
+                    <li class="lesson-item">
+                        <span class="lesson-status">🔒</span>
+                        <a href="#">1.3 Database Models and Migrations</a>
+                    </li>
+                </ul>
+
+                <h4>Module 2: REST API Development</h4>
+                <ul>
+                    <li class="lesson-item">
+                        <span class="lesson-status">🔒</span>
+                        <a href="#">2.1 Building Serializers and Views</a>
+                    </li>
+                    <li class="lesson-item">
+                        <span class="lesson-status">🔒</span>
+                        <a href="#">2.2 Working with ViewSets and Routers</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <footer class="sidebar-footer">
+                <button class="btn btn-secondary btn-full-width">Return to Dashboard</button>
+            </footer>
+        </aside>
+
+        <main class="lesson-content">
+            
+            <div class="lesson-header">
+                <h1>1.2 Setting up your first Django Project</h1>
+                <div class="completion-toggle">
+                    <input type="checkbox" id="mark-complete">
+                    <label for="mark-complete">Mark as Complete</label>
+                </div>
+            </div>
+
+            <div class="video-player-wrapper">
+                <div class="video-placeholder">
+                    [Video Player Embed for Lesson 1.2]
+                </div>
+            </div>
+            
+            <div class="lesson-tabs">
+                <div class="tab-header">
+                    <button class="tab-button active" data-tab="notes">Lesson Notes</button>
+                    <button class="tab-button" data-tab="resources">Downloads/Code</button>
+                    <button class="tab-button" data-tab="qanda">Q&A / Discussion</button>
+                </div>
+
+                <div class="tab-content active" id="notes">
+                    <p>This section contains the summarized text transcript and key code snippets from the video above.</p>
+                    <pre><code># Basic Django setup commands
+$ django-admin startproject my_project
+$ python manage.py startapp core</code></pre>
+                </div>
+
+                <div class="tab-content" id="resources">
+                    <ul>
+                        <li><a href="#">Project Starter Code (ZIP)</a></li>
+                        <li><a href="#">Lecture Slides (PDF)</a></li>
+                        <li><a href="#">External Reading: Django Official Docs</a></li>
+                    </ul>
+                </div>
+
+                <div class="tab-content" id="qanda">
+                    <p>Use this space to ask the instructor questions or discuss the content with peers.</p>
+                    <div class="discussion-placeholder">
+                        [Comments/Discussion Feed Placeholder]
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+    </div>
+      <div class="container nav-content">
+            <div class="auth-buttons">
+                <button class="menu-toggle" aria-label="Toggle navigation menu">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</button>
+            </div>
+        </div>
+
+    
+    
+    <script src="javascript.js" defer></script>
+</body>
+</html>

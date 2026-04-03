@@ -1,0 +1,1073 @@
+/*
+ * CoreCodeStudio Global Stylesheet (style.css)
+ * Colors:
+ * - Dark Blue: #0D1B2A (Primary Background/Header)
+ * - Light Blue/Gray: #E0E1DD (Light Backgrounds)
+ * - White: #FFFFFF (Text/Card Background)
+ * - Orange/Accent: #FF6B3D (Primary CTA)
+ */
+
+/* --- 0. BASE STYLES --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #0D1B2A; /* Dark text on light backgrounds */
+    background-color: #f4f4f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #0D1B2A;
+    transition: color 0.3s;
+}
+
+ul {
+    list-style: none;
+}
+
+h2, h3 {
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.section-padding {
+    padding: 4rem 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+    color: #0D1B2A;
+}
+
+.bg-light {
+    background-color: #E0E1DD;
+}
+
+/* --- 1. BUTTONS (CTAs) --- */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #FF6B3D; /* Orange CTA */
+    color: white;
+    border: 2px solid #FF6B3D;
+}
+
+.btn-primary:hover {
+    background-color: #e65f36;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #0D1B2A;
+    border: 2px solid #0D1B2A;
+}
+
+.btn-secondary:hover {
+    background-color: #0D1B2A;
+    color: white;
+}
+
+.btn-large {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+}
+
+/* Button used on course cards */
+.btn-card {
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    font-size: 0.9rem;
+}
+
+/* --- Payment + Checkout styles --- */
+.payment-main {
+    padding: 2rem 0;
+}
+
+.payment-grid {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 22px;
+    align-items: start;
+}
+
+.payment-form-area,
+.order-summary {
+    background: #ffffff;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    padding: 1.4rem;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05);
+}
+
+.payment-form-area h2 {
+    margin-bottom: 1rem;
+    font-size: 1.9rem;
+}
+
+.checkout-steps {
+    color: #334155;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+fieldset {
+    border: 1px solid #dbe2ee;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+legend {
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.radio-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0.65rem 0.8rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    margin-bottom: 0.55rem;
+    cursor: pointer;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.radio-card input[type="radio"] {
+    accent-color: #FF6B3D;
+}
+
+.radio-card:hover,
+.radio-card input[type="radio"]:checked + * {
+    background-color: #fff9f3;
+    border-color: #ffb095;
+}
+
+.form-group {
+    margin-bottom: 0.9rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.35rem;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 0.7rem 0.85rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background: #f8fafc;
+    color: #0f172a;
+    line-height: 1.35;
+}
+
+input[type="text"]:focus,
+select:focus {
+    outline: none;
+    border-color: #FF6B3D;
+    box-shadow: 0 0 0 3px rgba(255, 107, 61, 0.18);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+}
+
+.half-width {
+    width: 100%;
+}
+
+.btn-submit-payment {
+    width: 100%;
+    margin-top: 0.8rem;
+    font-size: 1.05rem;
+    padding: 0.95rem;
+    border-radius: 10px;
+}
+
+.forgot-link {
+    margin-left: 0.25rem;
+    color: #0D1B2A;
+    font-weight: 700;
+}
+
+.forgot-link:hover {
+    color: #FF6B3D;
+}
+
+.order-summary h3 {
+    margin-bottom: 1rem;
+}
+
+.summary-details,
+.price-breakdown {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+.summary-item,
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    color: #334155;
+}
+
+.price-item.total {
+    font-weight: 700;
+    font-size: 1.05rem;
+}
+
+.security-note {
+    margin-top: 1rem;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+@media (max-width: 1060px) {
+    .payment-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* --- 2. HEADER/NAVBAR --- */
+.main-header {
+    background-color: #E0E1DD; /* Light header background */
+    color: #0D1B2A;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .main-header {
+    background-color: #0D1B2A;
+    color: #0D1B2A;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: #0D1B2A;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.dark-mode .logo a {
+    color: #0D1B2A;
+}
+
+.main-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.main-nav a {
+    color: #0D1B2A;
+    padding: 0.5rem 0.8rem;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+}
+
+.dark-mode .main-nav a {
+    color: #0D1B2A;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: #0D1B2A;
+    border-bottom: 2px solid #FF6B3D;
+}
+
+.auth-buttons a {
+    margin-left: 10px;
+}
+
+
+/* --- 3. HERO BANNER --- */
+.hero-banner {
+    background: url('../images/hero-bg-mock.jpg') no-repeat center center/cover; /* Placeholder for a future image */
+    background-color: #0D1B2A; /* Fallback color */
+    color: white;
+    padding: 8rem 0;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+    font-weight: 300;
+}
+
+.cta-group a {
+    margin: 0 10px;
+}
+
+/* Style secondary button for better contrast on dark hero */
+.hero-banner .btn-secondary {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-color: white;
+}
+.hero-banner .btn-secondary:hover {
+    background-color: white;
+    color: #0D1B2A;
+}
+
+
+/* --- 4. FEATURED COURSES --- */
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.course-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.icon-placeholder {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #FF6B3D;
+    margin-bottom: 15px;
+}
+
+.course-card h4 {
+    color: #0D1B2A;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.course-card p {
+    font-size: 0.9rem;
+    color: #555;
+    min-height: 50px; /* Ensures card heights are similar */
+}
+
+/* Course page styles */
+.course-card-lg {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.course-card-lg:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.course-image {
+    width: 200px;
+    height: 150px;
+    background-color: #ddd;
+    flex-shrink: 0;
+}
+
+.course-image.python { background-color: #f0c330; }
+.course-image.java { background-color: #3b5998; }
+.course-image.javascript { background-color: #007acc; }
+.course-image.cpp { background-color: #a80023; }
+
+.course-info {
+    padding: 20px;
+    flex: 1;
+}
+
+.course-info h4 {
+    color: #0D1B2A;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.course-desc {
+    color: #666;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.course-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.course-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-price {
+    font-weight: bold;
+    color: #FF6B3D;
+    font-size: 1.2rem;
+}
+
+/* Blog styles */
+.blog-post-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 20px;
+}
+
+.blog-post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.post-image {
+    height: 200px;
+    background-color: #ddd;
+}
+
+.post-image.featured { background-color: #f0c330; }
+.post-image.webdev { background-color: #3b5998; }
+.post-image.career { background-color: #007acc; }
+.post-image.devops { background-color: #a80023; }
+
+.post-content {
+    padding: 20px;
+}
+
+.post-category {
+    color: #FF6B3D;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.post-content h3, .post-content h4 {
+    color: #0D1B2A;
+    margin-bottom: 10px;
+}
+
+.post-summary {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.post-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    color: #888;
+    margin-top: 15px;
+}
+
+.read-more {
+    color: #FF6B3D;
+    font-weight: bold;
+}
+
+/* Dashboard styles */
+.course-progress-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.course-title-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.status-badge {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.status-in-progress {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.status-complete {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.course-progress-meta {
+    color: #666;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.progress-bar-container {
+    background-color: #e9ecef;
+    border-radius: 10px;
+    height: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #FF6B3D;
+    border-radius: 10px;
+    transition: width 0.3s;
+}
+
+.progress-bar.progress-35 { width: 35%; }
+.progress-bar.progress-100 { width: 100%; }
+.progress-bar.progress-5 { width: 5%; }
+
+.progress-complete {
+    background-color: #28a745;
+}
+
+.progress-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progress-percent {
+    font-weight: bold;
+    color: #FF6B3D;
+}
+
+.dashboard-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 18px;
+    margin: 1.4rem 0 2rem;
+}
+
+.stat-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+.stat-card h3 {
+    font-size: 0.95rem;
+    color: #333;
+    margin-bottom: 0.4rem;
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #0D1B2A;
+    margin-bottom: 0.3rem;
+}
+
+.stat-card small {
+    color: #666;
+}
+
+.activity-table-section {
+    margin-top: 2rem;
+}
+
+.activity-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+}
+
+.activity-table th,
+.activity-table td {
+    padding: 12px 14px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.activity-table th {
+    background-color: #0D1B2A;
+    color: #fff;
+    font-weight: 700;
+}
+
+.activity-table tbody tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+/* --- 5. WHY CORECODESTUDIO --- */
+.benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+.benefit-item {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.benefit-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.benefit-item h4 {
+    color: #0D1B2A;
+    font-size: 1.15rem;
+}
+
+/* --- 6. FOOTER --- */
+.main-footer {
+    background-color: #0D1B2A;
+    color: #E0E1DD;
+    padding: 2rem 0 0 0;
+    font-size: 0.9rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-section h4 {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.footer-section a {
+    color: #E0E1DD;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a:hover {
+    color: #FF6B3D;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #0a1520; /* Slightly darker */
+}
+
+
+.faq-main .section-title {
+    margin-bottom: 0.4rem;
+}
+
+.faq-main .section-subtitle {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.faq-search-container {
+    margin: 1.2rem 0 1.6rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 0.5rem;
+}
+
+.faq-search-container input {
+    padding: 0.75rem 0.9rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    line-height: 1.5;
+}
+
+.faq-search-container button {
+    border: none;
+    background-color: #0D1B2A;
+    color: #fff;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+}
+
+.faq-category {
+    margin-bottom: 1.5rem;
+}
+
+.faq-category h3 {
+    margin-bottom: 0.7rem;
+    font-size: 1.25rem;
+    color: #0D1B2A;
+}
+
+.accordion-item {
+    border: 1px solid #dbe2ee;
+    border-radius: 8px;
+    margin-bottom: 0.65rem;
+    overflow: hidden;
+}
+
+.accordion-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.85rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background: #f8fafc;
+    border: none;
+    cursor: pointer;
+}
+
+.accordion-content {
+    padding: 0.85rem 1rem 1rem;
+    line-height: 1.75;
+    color: #334155;
+    background: #ffffff;
+}
+
+.accordion-content p {
+    margin: 0;
+}
+
+.need-more-help {
+    margin-top: 1.1rem;
+    line-height: 1.6;
+    font-weight: 600;
+}
+
+/* --- 7. MEDIA QUERIES (Responsiveness) --- */
+@media (max-width: 992px) {
+    .nav-content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .main-nav {
+        order: 2; /* Puts navigation below logo/auth buttons on wrap */
+        width: 100%;
+        margin-top: 15px;
+    }
+    .main-nav ul {
+        justify-content: center;
+    }
+    .hero-content h2 {
+        font-size: 2.8rem;
+    }
+    .benefit-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+/* Styling for JavaScript Validation Errors */
+/* --- SCROLL EFFECT FOR HEADER (Add to style.css) --- */
+.main-header {
+    /* Ensure transitions are smooth */
+    transition: padding 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.main-header.scrolled {
+    padding: 10px 0; /* Shrink header slightly when scrolled */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: white; /* Ensure solid background when sticky */
+}
+
+/* Ensure nav-content items remain centered */
+.main-header.scrolled .nav-content {
+    align-items: center; 
+}
+
+@media (max-width: 768px) {
+    .hero-banner {
+        padding: 6rem 0;
+    }
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .cta-group {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .cta-group a {
+        margin: 0;
+    }
+}
+
+/* --- Admin + Dashboard + Lesson + Payment improvements --- */
+.admin-wrapper,
+.dashboard-layout,
+.lesson-view-container,
+.payment-main {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 24px;
+    margin: 1.5rem auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.admin-sidebar,
+.dashboard-sidebar,
+.lesson-sidebar {
+    background-color: white;
+    border-radius: 10px;
+    padding: 18px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    min-height: min-content;
+}
+
+.admin-content-area,
+.dashboard-content,
+.lesson-content,
+.payment-form-area,
+.order-summary {
+    background-color: white;
+    border-radius: 10px;
+    padding: 18px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.admin-header,
+.welcome-section,
+.lesson-header,
+.payment-form-area h2 {
+    margin-bottom: 1rem;
+}
+
+.stats-grid,
+.data-panels-grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    margin-bottom: 1.5rem;
+}
+
+.stat-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 16px;
+}
+
+.stat-icon {
+    font-size: 1.5rem;
+}
+
+.stat-label {
+    color: #667085;
+    font-weight: 600;
+    font-size: 0.88rem;
+    text-transform: uppercase;
+}
+
+.stat-value {
+    font-size: 2rem;
+    letter-spacing: 0.03em;
+}
+
+.stat-trend {
+    font-size: 0.85rem;
+}
+
+.trend-up {color: #16a34a;}
+.trend-down {color: #ef4444;}
+.trend-neutral {color: #444;}
+
+.activity-table,
+.order-summary table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.activity-table th,
+.activity-table td,
+.order-summary td,
+.order-summary th {
+    padding: 10px 12px;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: left;
+}
+
+.activity-table th,
+.order-summary th {
+    background-color: #0D1B2A;
+    color: #fff;
+    font-weight: 600;
+}
+
+.activity-table tbody tr:nth-child(even),
+.order-summary tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+.order-summary {
+    width: 100%;
+}
+
+.order-summary h3,
+.order-summary .summary-item,
+.order-summary .price-item {
+    margin-bottom: 10px;
+}
+
+.price-breakdown .price-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.95rem;
+}
+
+.price-breakdown .price-item.total {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.btn-submit-payment {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.lesson-sidebar .lesson-item {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+.lesson-tabs {
+    margin-top: 1.2rem;
+}
+
+.tab-header {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.tab-button {
+    background-color: #f8fafc;
+    border: 1px solid #d1d5db;
+    color: #0D1B2A;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.tab-button.active {
+    background-color: #0D1B2A;
+    color: #fff;
+    border-color: #0D1B2A;
+}
+
+.tab-content {
+    display: none;
+    padding: 1rem;
+    background: #f8fafc;
+    border-radius: 8px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@media (max-width: 1200px) {
+    .admin-wrapper,
+    .dashboard-layout,
+    .lesson-view-container,
+    .payment-main {
+        grid-template-columns: 1fr;
+    }
+
+    .top-courses,
+    .recent-activity,
+    .order-summary,
+    .payment-form-area,
+    .lesson-sidebar,
+    .admin-sidebar {
+        width: 100%;
+    }
+}

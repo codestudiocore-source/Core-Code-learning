@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Courses - CoreCodeStudio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container nav-content">
+            <h1 class="logo"><a href="index.html">CoreCodeStudio</a></h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="course.html" class="active">Courses</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="lesson.html">Lesson</a></li>
+                    <li><a href="payement.html">Payment</a></li>
+                    <li><a href="course-details.html">Course Detail</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-secondary">Login</a>
+                <a href="signup.html" class="btn btn-primary">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="courses-main section-padding">
+        <div class="container">
+            <h2 class="section-title">Explore Our Full Course Catalog</h2>
+
+            <div class="course-page-layout">
+                
+                <aside class="filter-sidebar">
+                    <div class="search-bar-container">
+                        <input type="text" placeholder="Search Courses..." class="search-input">
+                        <button class="search-button">🔍</button>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Filter by Language</h4>
+                        <label class="checkbox-filter"><input type="checkbox" name="lang" value="python"> Python</label>
+                        <label class="checkbox-filter"><input type="checkbox" name="lang" value="java"> Java</label>
+                        <label class="checkbox-filter"><input type="checkbox" name="lang" value="c"> C / C++</label>
+                        <label class="checkbox-filter"><input type="checkbox" name="lang" value="javascript"> JavaScript</label>
+                        <label class="checkbox-filter"><input type="checkbox" name="lang" value="web"> HTML/CSS/Web</label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Filter by Category</h4>
+                        <select name="category" class="filter-select" aria-label="Course category filter">
+                            <option value="all">All Categories</option>
+                            <option value="frontend">Frontend Development</option>
+                            <option value="backend">Backend Development</option>
+                            <option value="data">Data Science & AI</option>
+                            <option value="cyber">Cybersecurity</option>
+                        </select>
+                    </div>
+
+                    <button class="btn btn-primary filter-apply">Apply Filters</button>
+                    <button class="btn btn-secondary filter-clear">Clear Filters</button>
+                </aside>
+
+                <section class="course-list-area">
+                    <p class="results-count">Showing 12 of 45 results</p>
+                    <div class="course-grid-full">
+                        
+                        <div class="course-card-lg">
+                            <div class="course-image python"></div>
+                            <div class="course-info">
+                                <h4>Advanced Python for Web Developers</h4>
+                                <p class="course-desc">Build APIs and dynamic websites using Python, Django, and Flask.</p>
+                                <div class="course-meta">
+                                    <span>👤 Instructor Name</span>
+                                    <span>⭐ 4.8 (1,200)</span>
+                                </div>
+                                <div class="course-actions">
+                                    <span class="course-price">$129.99</span>
+                                    <a href="#" class="btn btn-primary btn-card">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="course-card-lg">
+                            <div class="course-image java"></div>
+                            <div class="course-info">
+                                <h4>Complete Java Masterclass: OOP to Spring Boot</h4>
+                                <p class="course-desc">From basic syntax to advanced enterprise architecture.</p>
+                                <div class="course-meta">
+                                    <span>👤 Instructor Name</span>
+                                    <span>⭐ 4.6 (2,500)</span>
+                                </div>
+                                <div class="course-actions">
+                                    <span class="course-price">$199.99</span>
+                                    <a href="course-details.html?id=java-boot" class="btn btn-primary btn-card">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="course-card-lg">
+                            <div class="course-image javascript"></div>
+                            <div class="course-info">
+                                <h4>JavaScript Essentials: Modern ES6+</h4>
+                                <p class="course-desc">Master asynchronous JavaScript, DOM manipulation, and modern tooling.</p>
+                                <div class="course-meta">
+                                    <span>👤 Instructor Name</span>
+                                    <span>⭐ 4.9 (800)</span>
+                                </div>
+                                <div class="course-actions">
+                                    <span class="course-price">$99.99</span>
+                                    <a href="course-details.html?id=js-es6" class="btn btn-primary btn-card">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="course-card-lg">
+                            <div class="course-image cpp"></div>
+                            <div class="course-info">
+                                <h4>C++: Game Development Foundations</h4>
+                                <p class="course-desc">High-performance programming for graphics and low-level system design.</p>
+                                <div class="course-meta">
+                                    <span>👤 Instructor Name</span>
+                                    <span>⭐ 4.5 (1,500)</span>
+                                </div>
+                                <div class="course-actions">
+                                    <span class="course-price">$159.99</span>
+                                    <a href="course-details.html?id=cpp-game" class="btn btn-primary btn-card">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div class="pagination">
+                        <a href="#">&laquo;</a>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">&raquo;</a>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-bottom">
+            <p>&copy; 2025 CoreCodeStudio. All rights reserved.</p>
+        </div>
+    </footer>      
+    
+    <script src="javascript.js" defer></script>
+</body>
+</html>
